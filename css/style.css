@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #4B1F07;
+    background-color: #7B0F1D;
     overflow-x: hidden;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
@@ -24,8 +24,8 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #4B1F07;
-    color: #A34F18;
+    background-color:  #FCFBF4;
+    color: #FCFBF4;
     text-align: center;
     transition: all .3s ease-in;
     opacity: 0;
@@ -208,7 +208,7 @@ header:hover {
 
 
   .services-section {
-    background-color: #693312; /* Dark brown background */
+    background-color: #ffefdd; /* Dark brown background */
     color: #f5e0c3;
     text-align: center;
     padding: 4rem 2rem;
@@ -219,7 +219,7 @@ header:hover {
   .section-title {
     font-size: 2.6rem;
     margin-bottom: 2rem;
-    color: #f3e4c8; /* Light cream for the heading */
+    color: black; /* Light cream for the heading */
   }
   
   .services-container {
@@ -230,7 +230,7 @@ header:hover {
   }
   
   .service-card {
-    background-color: #341509; /* Slightly darker brown */
+    background-color: #7B0F1D; /* Slightly darker brown */
     padding: 2rem 1.5rem;
     border-radius: 10px;
     width: 340px;
@@ -247,7 +247,7 @@ header:hover {
     width: 75px;
     height: 75px;
     margin-bottom: 0.6rem;
-    stroke: #ff9f43;
+    stroke: #ffefdd;;
     margin-top: 5px;
   }
   
@@ -259,8 +259,8 @@ header:hover {
   }
 
 .navbar {
-    background-color: #4B1F07;
-    color: #F5E0C3;
+    background-color: #FCFBF4;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,7 +270,7 @@ header:hover {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #F5E0C3;
+    color: black;
 }
 
 .nav-links {
@@ -283,9 +283,9 @@ header:hover {
 
 .nav-links a {
     text-decoration: none;
-    color: #F5E0C3;
+    color: black;
     transition: color 0.3s;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .nav-links a:hover {
@@ -293,11 +293,11 @@ header:hover {
 }
 
 .cta-button {
-    background-color: #5D3221;
+    background-color: #7B0F1D;
     color: #F5E0C3;
     border: none;
     padding: 0.6rem 1rem;
-    border-radius: 8px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -305,7 +305,7 @@ header:hover {
 }
 
 .cta-button:hover {
-    background-color: #6F3B26;
+    background-color: rgba(111, 9, 26, 0.8);
 }
 
 .logo img {
@@ -321,7 +321,7 @@ header:hover {
     padding: 80px;
     max-width: 1400px;
     gap: 30px;
-    background-color: #2d1205;
+    background-color: #FCFBF4;
 }
 
 .about-text {
@@ -331,7 +331,7 @@ header:hover {
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #f5e0c3;
+    color: black;
 }
 
 .about-text p {
@@ -339,7 +339,7 @@ header:hover {
     font-size: 1rem;
     margin-bottom: 1rem;
     text-align: justify;
-    color: #f5e0c3;
+    color: black;
 }
 
 .about-highlight {
@@ -354,7 +354,7 @@ header:hover {
 }
 
 .about-highlight span:first-child {
-    color: #ffd263;
+    color: #f5e0c3;
     font-size: 1.5rem;
     margin-right: 10px;
 }
