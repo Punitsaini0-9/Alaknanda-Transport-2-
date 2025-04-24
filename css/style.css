@@ -113,12 +113,75 @@ header:hover {
   }
 }
 
-.about {
-  width: 100%;
-  height: 400px;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: black;
+  color: #f5e0c3;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  max-width: 1400px;
+  gap: 30px;
+  background-color: #5c0a15;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 2.0;
+  font-size: 1rem;
+  margin-bottom: 1rem; 
+  text-align: justify;
+}
+
+.about-highlight {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.about-highlight span:first-child {
+  color: #ffd263;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-top: 20px;
+  }
 }
 
 .services {
