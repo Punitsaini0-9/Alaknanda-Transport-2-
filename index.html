@@ -15,7 +15,7 @@
             <img src="logo.png" alt="Alaknanda Transport" />
           </div>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Fleet</a></li>
             <li><a href="#">About Us</a></li>
@@ -23,51 +23,122 @@
           <button class="cta-button">Request Transport</button>
         </nav>
       </header>
-      <section class="hero">
-        <div class="content">
-          <h1>
-            Reliable Molasses Transport<br />
-            Across the Country
-          </h1>
-          <p>
-            Alaknanda Transport delivers bulk molasses safely and efficiently
-            with our temperature-controlled fleet.
-          </p>
-          <button class="cta-btn">Get a Quote</button>
-        </div>
+      <section class="slider_container">
+        <section class="slider">
+          <div class="slide one">
+            <img
+              src="/images/scene-with-photorealistic-logistics-operations-proceedings.jpg"
+              alt=""
+            />
+            <span class="caption"> slide one </span>
+          </div>
+          <div class="slide two">
+            <img src="images/hero2.jpg" alt="" />
+            <span class="caption"> <h1></h1> </span>
+          </div>
+          <div class="slide three">
+            <img src="/images/hero3.jpg" alt="" />
+            <span class="caption"> slide three </span>
+          </div>
+        </section>
+        <button class="slider-btn prev-btn" onclick="prevSlide()">
+          ❮ Prev
+        </button>
+        <button class="slider-btn next-btn" onclick="nextSlide()">
+          Next ❯
+        </button>
+        <script src="/JS/hero.js"></script>
       </section>
-      <div class="about-container">
-        <div class="about-text">
-          <h2>About Us</h2>
-          <p>
-            At Alaknanda's, we specialize in the transportation of liquid bulk
-            commodities—most notably molasses—offering unmatched reliability,
-            safety, and efficiency. With over two decades of experience in the
-            liquid logistics industry, we’ve built a strong reputation as a
-            trusted partner for manufacturers, distributors, and refineries
-            across the nation.
-          </p>
-          <p>
-            Our team is equipped with modern fleet vehicles designed
-            specifically for liquid transport, and our logistics experts ensure
-            timely and secure deliveries to even the most remote destinations.
-            Whether it’s short-haul or long-haul, we’re committed to maintaining
-            the highest standards of hygiene, compliance, and customer
-            satisfaction.
-          </p>
-          <div class="about-highlight">
-            <span>20+</span> YEARS IN LIQUID LOGISTICS
+      <section class="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              At Alaknanda's, we specialize in the transportation of liquid bulk
+              commodities—most notably molasses—offering unmatched reliability,
+              safety, and efficiency. With over two decades of experience in the
+              liquid logistics industry, we’ve built a strong reputation as a
+              trusted partner for manufacturers, distributors, and refineries
+              across the nation.
+            </p>
+            <p>
+              Our team is equipped with modern fleet vehicles designed
+              specifically for liquid transport, and our logistics experts
+              ensure timely and secure deliveries to even the most remote
+              destinations. Whether it’s short-haul or long-haul, we’re
+              committed to maintaining the highest standards of hygiene,
+              compliance, and customer satisfaction.
+            </p>
+            <div class="about-highlight">
+              <span style="color: #ffd263">20+</span>
+              <span style="color: #f5e0c3">YEARS IN LIQUID LOGISTICS</span>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="images/Aboutus.avif" alt="Molasses pouring" />
           </div>
         </div>
-        <div class="about-img">
-          <img src="images/Aboutus.avif" alt="Molasses pouring" />
-        </div>
-      </div>
-      <section class="services">
-        <h1>Services</h1>
       </section>
-      <section class="services">
-        <h1>Services</h1>
+      <section class="services-section">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container">
+          <!-- Bulk Molasses Transport -->
+          <div class="service-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="service-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#FF9F43"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 15a2.25 2.25 0 002.25 2.25h.75a2.25 2.25 0 004.5 0h5.25a2.25 2.25 0 004.5 0H19.5A2.25 2.25 0 0021.75 15v-3.75a.75.75 0 00-.75-.75h-2.25V9a.75.75 0 00-.75-.75H12V6a.75.75 0 00-.75-.75H3a.75.75 0 00-.75.75v9z"
+              />
+            </svg>
+            <p class="service-text">Bulk Molasses<br />Transport</p>
+          </div>
+
+          <!-- Temperature-Controlled Fleet -->
+          <div class="service-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="service-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#FF9F43"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 2.25a.75.75 0 00-.75.75v9.086a3 3 0 10.75 0V3a.75.75 0 00-.75-.75zM15.75 15a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+            <p class="service-text">Temperature-<br />Controlled Fleet</p>
+          </div>
+
+          <!-- Agricultural & Industrial Clients -->
+          <div class="service-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="service-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#FF9F43"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.25 15.75a3 3 0 116 0 3 3 0 01-6 0zm13.5 0a1.5 1.5 0 11-3 0m3 0a3 3 0 10-3 3h1.5a1.5 1.5 0 001.5-1.5V15.75zm-3-3V6a.75.75 0 00-.75-.75H6a.75.75 0 00-.75.75v4.5"
+              />
+            </svg>
+            <p class="service-text">Agricultural &<br />Industrial Clients</p>
+          </div>
+        </div>
       </section>
     </div>
   </body>
