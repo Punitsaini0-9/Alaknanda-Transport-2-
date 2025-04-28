@@ -346,3 +346,76 @@ header:hover {
     margin-top: 20px;
   }
 }
+
+
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* HERO SECTION */
+.hero {
+  height: 100vh; /* Scroll area */
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* TEXT STYLING */
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  z-index: 3;
+  pointer-events: none;
+  letter-spacing: 2px;
+}
+
+.top-text {
+  top: 40%;
+}
+
+.bottom-text {
+  top: 50%;
+}
+
+.bottom-text .the {
+  font-weight: 300;
+  margin: 0 5px;
+}
+
+.bottom-text .box-text {
+  font-weight: 900;
+  color: #000;
+  margin-left: 8px;
+}
+
+/* VIDEO MASK BOX */
+.video-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  overflow: hidden;
+  border-radius: 8px;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1;
+}
+
+/* VIDEO INSIDE BOX */
+.video-mask video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
