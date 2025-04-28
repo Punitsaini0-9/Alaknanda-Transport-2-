@@ -348,6 +348,7 @@ header:hover {
 }
 
 
+
 /* RESET STYLES */
 * {
   margin: 0;
@@ -370,12 +371,13 @@ header:hover {
   position: absolute;
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #000;
   z-index: 3;
   pointer-events: none;
   letter-spacing: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .top-text {
@@ -383,19 +385,22 @@ header:hover {
 }
 
 .bottom-text {
-  top: 50%;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);  /* Center horizontally */
+  font-style: italic;  /* Make text italic */
+  font-family: 'galak pro', sans-serif;
+  font-size: 45px;
 }
 
-.bottom-text .the {
-  font-weight: 300;
-  margin: 0 5px;
-}
+
 
 .bottom-text .box-text {
   font-weight: 900;
   color: #000;
   margin-left: 8px;
 }
+
 
 /* VIDEO MASK BOX */
 .video-mask {
@@ -404,7 +409,7 @@ header:hover {
   left: 50%;
   width: 40px;
   height: 40px;
-  background: #000;
+  background: #7b0f1d;
   overflow: hidden;
   border-radius: 8px;
   transform: translate(-50%, -50%) scale(1);
