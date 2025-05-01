@@ -248,6 +248,7 @@ header:hover {
   color: black;
   transition: color 0.3s;
   font-size: 22px;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
