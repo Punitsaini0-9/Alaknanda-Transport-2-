@@ -15,13 +15,7 @@ body {
   font-style: normal;
 }
 
-.full-body {
-  width: 90%;
-  margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
 
 header {
   width: 100%;
@@ -285,7 +279,7 @@ header:hover {
   align-items: center;
   justify-content: space-between;
   padding: 80px;
-  max-width: 1400px;
+  max-width: 1500px;
   gap: 30px;
   background-color: #fcfbf4;
 }
@@ -427,8 +421,8 @@ header:hover {
 /* <!-- Section Fleet --> */
 
 .fleet-section {
-  background-color: #a31027;
-  width: 90%;
+  background-color: #7b0f1d;
+  width: 100%;
   margin: auto;
   padding: 80px;
   display: flex;
@@ -484,7 +478,7 @@ header:hover {
 
 
 .testimonial-section {
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 60px 20px;
   display: flex;
@@ -607,4 +601,111 @@ header:hover {
   background-color: #5b3228;
   width: 20px;
   border-radius: 6px;
+}
+
+/* === FOOTER STYLES === */
+.footer {
+  background-color: #a51b1f;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: left;
+  max-width: 100%;
+  padding: 2rem 1rem;
+ 
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid #fff3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem ;
+}
+
+.footer-column {
+  padding: 3rem 3rem 1rem;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  background-color: #111;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-bottom h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* === MEDIA QUERIES FOR RESPONSIVENESS === */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: auto;
+    margin-bottom: auto;
+  }
+
+  .footer-bottom h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
