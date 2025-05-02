@@ -40,59 +40,6 @@ header:hover {
   color: #f5e0c3;
 }
 
-
-
-.services-section {
-  background-color: #ffefdd; /* Dark brown background */
-  color: #f5e0c3;
-  text-align: center;
-  padding: 4rem 2rem;
-  font-family: "Ubuntu", sans-serif;
-  height: 520px;
-}
-
-.section-title {
-  font-size: 2.6rem;
-  margin-bottom: 2rem;
-  color: black; /* Light cream for the heading */
-}
-
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.service-card {
-  background-color: #7b0f1d; /* Slightly darker brown */
-  padding: 2rem 1.5rem;
-  border-radius: 10px;
-  width: 340px;
-  height: 270px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-icon {
-  width: 75px;
-  height: 75px;
-  margin-bottom: 0.6rem;
-  stroke: #ffefdd;
-  margin-top: 5px;
-}
-
-.service-text {
-  color: #f5e0c3;
-  margin-top: 20px;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
 .navbar {
   background-color: #ffefdd;
   color: black;
@@ -146,72 +93,6 @@ header:hover {
 .logo img {
   height: 40px;
   /* Adjust height as needed */
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px;
-  max-width: 1500px;
-  gap: 30px;
-  background-color: #fcfbf4;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.about-text p {
-  line-height: 2;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  text-align: justify;
-  color: black;
-}
-
-.about-highlight {
-  background-color: black;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.about-highlight span:first-child {
-  color: #f5e0c3;
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-.about-img {
-  flex: 1;
-}
-
-.about-img img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-img {
-    margin-top: 20px;
-  }
 }
 
 
@@ -292,7 +173,129 @@ header:hover {
   pointer-events: none;
 }
 
-/* <!-- Section Fleet --> */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  max-width: 1500px;
+  gap: 30px;
+  background-color: #fcfbf4;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.about-text p {
+  line-height: 2;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: black;
+}
+
+.about-highlight {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.about-highlight span:first-child {
+  color: #f5e0c3;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+.services-section {
+  background-color: #ffefdd; /* Dark brown background */
+  color: #f5e0c3;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+  height: 520px;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  color: black; /* Light cream for the heading */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #7b0f1d; /* Slightly darker brown */
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  width: 340px;
+  height: 270px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 0.6rem;
+  stroke: #ffefdd;
+  margin-top: 5px;
+}
+
+.service-text {
+  color: #f5e0c3;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+
+/* <!-- Section Fleet (Specialised Tankers) --> */
 
 .fleet-section {
   background-color: #7b0f1d;
@@ -326,8 +329,19 @@ header:hover {
 }
 
 .fleet-content li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.fleet-content li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff9f43;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 .fleet-images {
@@ -338,15 +352,49 @@ header:hover {
   justify-content: center;
 }
 
-.fleet-images img {
-  width: 240px;
-  height: 240px;
-  border-radius: 0.75rem;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.fleet-images {
+  display: flex;
+  flex: 2;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.fleet-card {
+  background-color: #4d0c17;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 260px;
+  height: 350px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fleet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.fleet-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.fleet-card p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f5e0c3;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 30px;
+}
+
+
 /* <!-- Section Fleet End --> */
+
 
 /* testimonials */
 
