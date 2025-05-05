@@ -53,39 +53,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const video = document.getElementById("maskedVideo");
+const video = document.getElementById("maskedVideo");
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".hero",
-      start: "top top",
-      end: "bottom+=1200 top", // Slower effect
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-      onUpdate: (self) => {
-        if (self.direction === 1 && self.progress > 0.1) {
-          if (video.paused) video.play();
-        } else if (self.direction === -1 && self.progress < 0.9) {
-          video.pause();
-          video.currentTime = 0;
-        }
-      },
+// Try playing immediately if possible
+video.play().catch(err => console.log("Autoplay issue:", err));
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom+=1200 top",
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+    onUpdate: (self) => {
+      if (self.progress > 0.01 && video.paused) {
+        video.play();
+      }
+      if (self.direction === -1 && self.progress < 0.9) {
+        video.pause();
+        video.currentTime = 0;
+      }
     },
-  });
+  },
+});
 
-  tl.to(".top-text", { y: "-100px", opacity: 0, ease: "expo.out" }, 0)
-    .to(".bottom-text", { y: "100px", opacity: 0, ease: "expo.out" }, 0.1)
-    .to(
-      ".video-mask",
-      {
-        scale: 1,
-        width: "100%",
-        height: "100%",
-        borderRadius: "0%",
-        ease: "expo.out",
-      },
-      0.2
-    )
-    .to("#maskedVideo", { opacity: 1, ease: "expo.out" }, 0.3);
+tl.to(".top-text", { y: "-100px", opacity: 0, ease: "expo.out" }, 0)
+  .to(".bottom-text", { y: "100px", opacity: 0, ease: "expo.out" }, 0.1)
+  .to(".video-mask", {
+    width: "100vw",
+    height: "100vh",
+    top: "0%",
+    left: "0%",
+    borderRadius: "0%",
+    transform: "translate(0%, 0%)",
+    ease: "expo.out",
+  }, 0.2);
+
+
 });

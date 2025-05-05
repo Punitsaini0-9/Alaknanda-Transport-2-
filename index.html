@@ -5,7 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/..."></script>
+<script src="https://www.gozoop.com/assets/js/gsap.min.js"></script>
+
+  <!-- Libs and Plugins CSS -->
+  <!--  master CSS -->
+  <link rel="stylesheet" href="https://www.gozoop.com/assets/css/helper.css?v20250502032602pm">
+  <link rel="stylesheet" href="https://www.gozoop.com/assets/css/theme.css?v20250502032602pm">
+  <link rel="stylesheet" href="https://www.gozoop.com/assets/css/revamp.css?v20250502032602pm">
   <link rel="stylesheet" href="css/style.css" />
+
+
+  <style>
+    #main-content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+  
+    #main-content.show {
+      display: block;
+      opacity: 1;
+    }
+  
+    .toscroll {
+      height: 100vh; /* Helps trigger scroll threshold */
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -21,25 +48,49 @@
           <li><a href="#">Fleet</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
-              <a href="https://wa.me/917417827633?text=Hi%20there,%20I%20would%20like%20to%20request%20a%20transport." 
-        class="btn request-btn" 
-        target="_blank">
-        Request  Transport
-      </a>
+        <a href="https://wa.me/917417827633?text=Hi%20there,%20I%20would%20like%20to%20request%20a%20transport."
+          class="btn request-btn" target="_blank">
+          Request Transport
+        </a>
 
       </nav>
     </header>
 
     <!--hero section-->
-    <section class="hero">
-      <div class="text top-text">ALAKNANDA TRANSPORT</div>
+    <section class="hero" id="toscroll">
+      <div id="scroll-container">
+        <div id="content-wrap">
 
-      <div class="video-mask">
-        <video id="maskedVideo" src="video/herovideo.mp4" muted loop></video>
+          <div class="bg-white mobileGzVideo">
+            <div class="section-video">
+              <div class="toscroll"></div>
+              <div class="container-video">
+
+                <video id="main-video" autoplay loop muted playsinline webkit-playsinline preload="auto"
+                  poster="https://www.gozoop.com/assets/images/new-loader-gif-red.gif?v=1746179762">
+                  <!-- old loader - https://gozoop.com/uploads/media/source/bxmvgBICdjPB_preloader.gif -->
+                  <source
+                    src="https://gozoop-cdn.s3.ap-south-1.amazonaws.com/Gz_Website_video_V5_03_10_4.mp4?v=1746179762"
+                    type="video/mp4">
+                </video>
+
+              </div>
+              <div class="tt-wrap">
+                <div class="container-title" style="left: 14%;">
+                  <h1 class="title">
+                    <span class="titleUp">Alaknanda<div class="inline-block space"></div>Transport</span><span
+                      class="titleDown italic">Alaknanda<div class="text-stroke inline-block">Transport</div> </span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="text bottom-text">ALAKNANDA <span class="box-text"> TRANSPORT</span></div>
     </section>
+
+    <div id="main-content" class="hidden"></div>
 
     <section class="about">
       <div class="about-container">
@@ -114,31 +165,31 @@
 
 
   <!-- Section Specialised Tankers -->
-<section class="fleet-section">
-  <div class="fleet-content">
-    <h2>Specialised Tankers</h2>
-    <ul>
-      <li> Up to 7500 Gallon Capacity</li>
-      <li> GPS Tracking</li>
-      <li> Rigorous Cleaning Protocols</li>
-    </ul>
-  </div>
-  <div class="fleet-images">
-    <div class="fleet-card">
-      <img src="images/truck3.webp" alt="Fleet Truck 1" />
-      <p>12 Chakka</p>
+  <section class="fleet-section">
+    <div class="fleet-content">
+      <h2>Specialised Tankers</h2>
+      <ul>
+        <li> Up to 7500 Gallon Capacity</li>
+        <li> GPS Tracking</li>
+        <li> Rigorous Cleaning Protocols</li>
+      </ul>
     </div>
-    <div class="fleet-card">
-      <img src="images/truck4.jpg" alt="Fleet Truck 2" />
-      <p>14 Chakka</p>
+    <div class="fleet-images">
+      <div class="fleet-card">
+        <img src="images/truck3.webp" alt="Fleet Truck 1" />
+        <p>12 Tyer</p>
+      </div>
+      <div class="fleet-card">
+        <img src="images/truck4.jpg" alt="Fleet Truck 2" />
+        <p>14 Tyer</p>
+      </div>
+      <div class="fleet-card">
+        <img src="images/truck5.avif" alt="Fleet Truck 3" />
+        <p>18 Tyer</p>
+      </div>
     </div>
-    <div class="fleet-card">
-      <img src="images/truck5.avif" alt="Fleet Truck 3" />
-      <p>18 Chakka</p>
-    </div>
-  </div>
-  
-</section>
+
+  </section>
 
 
   <!-- Testimonial Section -->
@@ -240,45 +291,195 @@
   </section>
   <footer class="footer">
     <div class="footer-content">
-        <div class="footer-column">
-            <h4>About Us</h4>
-            <p>Alaknanda Transport ensures reliable <br /> transport across the country using our <br />
-                temperature-controlled fleet.</p>
-        </div>
-        <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Poral | Address</h4>
-            <p><a href="">hffa@Fudusetece.com</a></p>
-            <p><a href="">(128)-483-7530</a></p>
-            <p>1224 Transport Lane, City State 12545</p>
-        </div>
-        <div class="footer-column">
-            <h4>Follow Us</h4>
-            <p class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a><br>
-                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-            </p>
-        </div>
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <p>Alaknanda Transport ensures reliable <br /> transport across the country using our <br />
+          temperature-controlled fleet.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Poral | Address</h4>
+        <p><a href="">hffa@Fudusetece.com</a></p>
+        <p><a href="">(128)-483-7530</a></p>
+        <p>1224 Transport Lane, City State 12545</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <p class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a><br>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        </p>
+      </div>
     </div>
     <div class="footer-bottom">
-        <h3>©️ 2025 Alaknanda Transport. All Rights Reserved.</h3>
+      <h3>©️ 2025 Alaknanda Transport. All Rights Reserved.</h3>
     </div>
-</footer>
+  </footer>
 
+  </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="JS/main.js"></script>
+
+  <!-- Core JS -->
+  <script src="https://www.gozoop.com/assets/js/jquery.min.js"></script>
+  <!-- jquery JS (https://jquery.com) -->
+
+
+
+
+
+
+
+  <!-- Libs and Plugins JS -->
+  <script src="https://www.gozoop.com/assets/js/gsap.min.js"></script>
+
+  <script src="https://www.gozoop.com/assets/js/ScrollTrigger.min.js"></script>
+
+  <!-- Swiper JS (https://swiperjs.com/) -->
+  <script src="https://www.gozoop.com/assets/js/imagesloaded.pkgd.min.js"></script>
+
+  <script src="https://www.gozoop.com/assets/js/theme.js?v20250502032602pm"></script>
+  <!-- server is down -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/split-type"></script>
+
+
+  </div>
+  </main>
+
+  <script type="text/javascript">
+    let isAtBottom = false;
+    let scrollAttempts = 0;
+    let scrollThreshold = 100;
+    const secretSection = document.getElementById('footer__reveal');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.body.scrollHeight;
+
+      if (scrollTop + windowHeight >= bodyHeight - 5) {
+        isAtBottom = true;
+      } else {
+        isAtBottom = false;
+        scrollAttempts = 0;
+      }
+    });
+
+    window.addEventListener('wheel', (e) => {
+      if (isAtBottom && e.deltaY > 0) {
+        scrollAttempts++;
+
+        if (scrollAttempts >= scrollThreshold) {
+          secretSection.style.position = 'sticky';
+          secretSection.style.opacity = '1';
+          secretSection.style.pointerEvents = 'all';
+        }
+      }
+    });
+
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    window.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      touchEndY = e.touches[0].clientY;
+
+      scrollThreshold = 80;
+
+      if (isAtBottom && (touchStartY - touchEndY) > 0) { // Detect upward scrolling
+        scrollAttempts++;
+
+        if (scrollAttempts >= scrollThreshold) {
+          secretSection.style.position = 'sticky';
+          secretSection.style.opacity = '1';
+          secretSection.style.pointerEvents = 'all';
+        }
+      }
+    });
+
+    let realValues = ['', '', '', '', '', ''];
+    const inputs = document.querySelectorAll('.code-input');
+
+    inputs.forEach((input, index) => {
+      input.addEventListener('input', () => {
+        let value = input.value;
+
+        if (value.length > 1) {
+          input.value = '';
+          return;
+        }
+
+        if (value) {
+          realValues[index] = value;
+          input.value = '*';
+        }
+
+        if (index === inputs.length - 1 && value) {
+          submitForm();
+        }
+      });
+    });
+
+    function submitForm() {
+      $(".show_message").html("");
+      // Join all the real values from the inputs
+      const code = realValues.join('');
+      $.ajax({
+        url: 'https://www.gozoop.com/validate-code',
+        type: 'POST',
+        data: {
+          code: code
+        },
+        dataType: 'json',
+        success: function (response) {
+          if (response.status === true) {
+            $(".show_message").html("Please wait, we are redirecting...");
+
+            setTimeout(() => {
+              window.location.href = response.redirect_url;
+            }, 800);
+
+          } else {
+            $(".show_message").html(response.message);
+          }
+        }
+      });
+    }
+  </script>
+
+<!-- SCROLL SCRIPT -->
+<script>
+  window.addEventListener("scroll", () => {
+    const hero = document.querySelector(".hero");
+    const mainContent = document.querySelector(".scroll-content");
+
+    const heroBottom = hero.getBoundingClientRect().bottom;
+
+    if (heroBottom <= 0) {
+      mainContent.classList.add("visible");
+    }
+  });
+</script>
+
+
+
 </body>
 
 </html>
