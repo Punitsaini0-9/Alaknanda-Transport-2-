@@ -39,6 +39,213 @@ header {
 header:hover {
   color: #f5e0c3;
 }
+.slider_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .slide .one{
+    background-image: url('/images/scene-with-photorealistic-logistics-operations-proceedings.jpg');
+} */
+
+.slide .caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%) scale(0.8); /* off-screen and small */
+    width: 50%;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.348);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5rem;
+    border-radius: 0 2rem 2rem 0;
+    text-align: left;
+    opacity: 0;
+  }
+  
+  /* This class will be dynamically added on slide change */
+  .caption-animate {
+    animation: slideZoomIn 1s ease-out forwards;
+  }
+  
+  /* Combined animation: slide in + zoom + fade */
+  @keyframes slideZoomIn {
+    from {
+      transform: translate(-100%, -50%) scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+.slide .caption h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .slide .caption p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d1b7a3;
+    max-width: 600px;
+  }
+
+  .cta-btn {
+    background-color: #6f091a;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 0 8px rgba(111, 9, 26, 0.5);
+    transition: background 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    background-color: #a31027;
+  }
+
+.slider-btn {
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(111, 9, 26, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    z-index: 10;
+    transition: background 0.3s ease;
+    width: 100px;
+    margin-left: 80%;
+}
+
+.slider-btn:hover {
+    background: #a31027;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+
+/* ✅ MEDIA QUERY for small screens (phones & tablets) */
+@media (max-width: 768px) {
+    .slide .caption {
+        font-size: 2.2rem;
+        padding: 0.5rem 2rem;
+        bottom: 25%;
+    }
+
+    .slider-btn {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .prev-btn {
+        left: 10px;
+        bottom: 20px;
+    }
+
+    .next-btn {
+        right: 10px;
+        left: auto;
+        bottom: 20px;
+    }
+}
+
+
+  .services-section {
+    background-color: #ffefdd; /* Dark brown background */
+    color: #f5e0c3;
+    text-align: center;
+    padding: 4rem 2rem;
+    font-family: "Ubuntu", sans-serif;
+    height: 520px;
+  }
+  
+  .section-title {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    color: black; /* Light cream for the heading */
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background-color: #7B0F1D; /* Slightly darker brown */
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    width: 340px;
+    height:270px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icon {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 0.6rem;
+    stroke: #ffefdd;;
+    margin-top: 5px;
+  }
+  
+  .service-text {
+    color: #f5e0c3;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
 
 .navbar {
   background-color: #ffefdd;
