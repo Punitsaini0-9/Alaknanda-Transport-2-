@@ -6,34 +6,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/..."></script>
-<script src="https://www.gozoop.com/assets/js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/..."></script>
+  <script src="https://www.gozoop.com/assets/js/gsap.min.js"></script>
 
   <!-- Libs and Plugins CSS -->
   <!--  master CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
   <link rel="stylesheet" href="https://www.gozoop.com/assets/css/helper.css?v20250502032602pm">
   <link rel="stylesheet" href="https://www.gozoop.com/assets/css/theme.css?v20250502032602pm">
   <link rel="stylesheet" href="https://www.gozoop.com/assets/css/revamp.css?v20250502032602pm">
   <link rel="stylesheet" href="css/style.css" />
 
 
-  <style>
-    #main-content {
-      display: none;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-    }
-  
-    #main-content.show {
-      display: block;
-      opacity: 1;
-    }
-  
-    .toscroll {
-      height: 100vh; /* Helps trigger scroll threshold */
-    }
-  </style>
-  
+
 </head>
 
 <body>
@@ -70,73 +57,28 @@
                 <video id="main-video" autoplay loop muted playsinline webkit-playsinline preload="auto"
                   poster="https://www.gozoop.com/assets/images/new-loader-gif-red.gif?v=1746179762">
                   <!-- old loader - https://gozoop.com/uploads/media/source/bxmvgBICdjPB_preloader.gif -->
-                  <source
-                    src="https://gozoop-cdn.s3.ap-south-1.amazonaws.com/Gz_Website_video_V5_03_10_4.mp4?v=1746179762"
-                    type="video/mp4">
+                  <source src="assets/video/herovideo.mp4" type="video/mp4">
                 </video>
 
               </div>
               <div class="tt-wrap">
-                <div class="container-title" style="left: 14%;">
+                <div class="container-title">
                   <h1 class="title">
-                    <span class="titleUp">Alaknanda<div class="inline-block space"></div>Transport</span><span
-                      class="titleDown italic">Alaknanda<div class="text-stroke inline-block">Transport</div> </span>
+                      <span class="titleUp">Alaknanda<div class="inline-block space"></div>Transport</span><span
+                        class="titleDown italic">Alaknanda<div class="text-stroke inline-block">Transport</div> </span>
                   </h1>
                 </div>
               </div>
-
-  <body>
-    <div class="full-body">
-      <header>
-        <nav class="navbar">
-          <div class="logo">
-            <img src="logo.png" alt="Alaknanda Transport" />
+            </div>
           </div>
-          <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Fleet</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-          <button class="cta-button">Request Transport</button>
-        </nav>
-      </header>
-      <section class="slider_container">
-        <section class="slider">
-            <div class="slide one">
-                <img src="/images/scene-with-photorealistic-logistics-operations-proceedings.jpg" alt="" />
-                <span class="caption caption-animation">
-                    <h1>Reliable Molasses Transport Across the Country</h1>
-                    <p>Alaknanda Transport delivers bulk molasses safely and efficiently with our
-                        temperature-controlled fleet.</p>
-                    <button class="cta-btn">Get a Quote</button>
+        </div>
+      </div>
 
-                </span>
-            </div>
-            <div class="slide two">
-                <img src="images/hero2.jpg" alt="" />
-                <span class="caption">
-
-                    <h1>Trusted by Leading Industries Nationwide Across the Country</h1>
-                    <p>With years of experience, we’re the preferred logistics partner for companies that rely on
-                        consistent and secure molasses delivery.</p>
-                    <!-- <button class="cta-btn">Get a Quote</button> -->
-                </span>
-            </div>
-            <div class="slide three">
-                <img src="/images/hero3.jpg" alt="" />
-                <span class="caption">
-                    <h1>Seamless Delivery, Every Mile of the Way</h1>
-                    <p>Our advanced fleet and skilled team ensure your molasses shipments arrive on time, every time
-                        — without compromise</p>
-                    <!-- <button class="cta-btn">Get a Quote</button>     -->
-                </span>
-            </div>
-        </section>
-        <button class="slider-btn prev-btn" onclick="prevSlide()">❮ Prev</button>
-        <button class="slider-btn next-btn" onclick="nextSlide()">Next ❯</button>
-        <script src="/JS/hero.js"></script>
     </section>
+
+
+    <div id="main-content" class="hidden">
+
       <section class="about">
         <div class="about-container">
           <div class="about-text">
@@ -160,250 +102,216 @@
             <div class="about-highlight">
               <span style="color: #ffd263">20+</span>
               <span style="color: #f5e0c3">YEARS IN LIQUID LOGISTICS</span>
-
             </div>
           </div>
-        </div>
-      </div>
-
-    </section>
-
-    <div id="main-content" class="hidden"></div>
-
-    <section class="about">
-      <div class="about-container">
-        <div class="about-text">
-          <h2>About Us</h2>
-          <p>
-            At Alaknanda's, we specialize in the transportation of liquid bulk
-            commodities—most notably molasses—offering unmatched reliability,
-            safety, and efficiency. With over two decades of experience in the
-            liquid logistics industry, we’ve built a strong reputation as a
-            trusted partner for manufacturers, distributors, and refineries
-            across the nation.
-          </p>
-          <p>
-            Our team is equipped with modern fleet vehicles designed
-            specifically for liquid transport, and our logistics experts
-            ensure timely and secure deliveries to even the most remote
-            destinations. Whether it’s short-haul or long-haul, we’re
-            committed to maintaining the highest standards of hygiene,
-            compliance, and customer satisfaction.
-          </p>
-          <div class="about-highlight">
-            <span style="color: #ffd263">20+</span>
-            <span style="color: #f5e0c3">YEARS IN LIQUID LOGISTICS</span>
+          <div class="about-img">
+            <img src="images/Aboutus.avif" alt="Molasses pouring" />
           </div>
         </div>
-        <div class="about-img">
-          <img src="images/Aboutus.avif" alt="Molasses pouring" />
+      </section>
+
+
+
+
+      <!--Service Section-->
+      <section class="services-section">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container">
+          <!-- Bulk Molasses Transport -->
+          <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24"
+              stroke="#FF9F43" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 15a2.25 2.25 0 002.25 2.25h.75a2.25 2.25 0 004.5 0h5.25a2.25 2.25 0 004.5 0H19.5A2.25 2.25 0 0021.75 15v-3.75a.75.75 0 00-.75-.75h-2.25V9a.75.75 0 00-.75-.75H12V6a.75.75 0 00-.75-.75H3a.75.75 0 00-.75.75v9z" />
+            </svg>
+            <p class="service-text">Bulk Molasses<br />Transport</p>
+          </div>
+
+          <!-- Temperature-Controlled Fleet -->
+          <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24"
+              stroke="#FF9F43" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 2.25a.75.75 0 00-.75.75v9.086a3 3 0 10.75 0V3a.75.75 0 00-.75-.75zM15.75 15a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            <p class="service-text">Temperature-<br />Controlled Fleet</p>
+          </div>
+
+          <!-- Agricultural & Industrial Clients -->
+          <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24"
+              stroke="#FF9F43" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.25 15.75a3 3 0 116 0 3 3 0 01-6 0zm13.5 0a1.5 1.5 0 11-3 0m3 0a3 3 0 10-3 3h1.5a1.5 1.5 0 001.5-1.5V15.75zm-3-3V6a.75.75 0 00-.75-.75H6a.75.75 0 00-.75.75v4.5" />
+            </svg>
+            <p class="service-text">Agricultural &<br />Industrial Clients</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-    <!--Service Section-->
-    <section class="services-section">
-      <h2 class="section-title">Services</h2>
-      <div class="services-container">
-        <!-- Bulk Molasses Transport -->
-        <div class="service-card">
-          <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24" stroke="#FF9F43"
-            stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M2.25 15a2.25 2.25 0 002.25 2.25h.75a2.25 2.25 0 004.5 0h5.25a2.25 2.25 0 004.5 0H19.5A2.25 2.25 0 0021.75 15v-3.75a.75.75 0 00-.75-.75h-2.25V9a.75.75 0 00-.75-.75H12V6a.75.75 0 00-.75-.75H3a.75.75 0 00-.75.75v9z" />
-          </svg>
-          <p class="service-text">Bulk Molasses<br />Transport</p>
-        </div>
-
-        <!-- Temperature-Controlled Fleet -->
-        <div class="service-card">
-          <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24" stroke="#FF9F43"
-            stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 2.25a.75.75 0 00-.75.75v9.086a3 3 0 10.75 0V3a.75.75 0 00-.75-.75zM15.75 15a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-          </svg>
-          <p class="service-text">Temperature-<br />Controlled Fleet</p>
-        </div>
-
-        <!-- Agricultural & Industrial Clients -->
-        <div class="service-card">
-          <svg xmlns="http://www.w3.org/2000/svg" class="service-icon" fill="none" viewBox="0 0 24 24" stroke="#FF9F43"
-            stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.25 15.75a3 3 0 116 0 3 3 0 01-6 0zm13.5 0a1.5 1.5 0 11-3 0m3 0a3 3 0 10-3 3h1.5a1.5 1.5 0 001.5-1.5V15.75zm-3-3V6a.75.75 0 00-.75-.75H6a.75.75 0 00-.75.75v4.5" />
-          </svg>
-          <p class="service-text">Agricultural &<br />Industrial Clients</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-  <!-- Section Specialised Tankers -->
-  <section class="fleet-section">
-    <div class="fleet-content">
-      <h2>Specialised Tankers</h2>
-      <ul>
-        <li> Up to 7500 Gallon Capacity</li>
-        <li> GPS Tracking</li>
-        <li> Rigorous Cleaning Protocols</li>
-      </ul>
-    </div>
-    <div class="fleet-images">
-      <div class="fleet-card">
-        <img src="images/truck3.webp" alt="Fleet Truck 1" />
-        <p>12 Tyer</p>
-      </div>
-      <div class="fleet-card">
-        <img src="images/truck4.jpg" alt="Fleet Truck 2" />
-        <p>14 Tyer</p>
-      </div>
-      <div class="fleet-card">
-        <img src="images/truck5.avif" alt="Fleet Truck 3" />
-        <p>18 Tyer</p>
-      </div>
+      </section>
     </div>
 
-  </section>
 
-
-  <!-- Testimonial Section -->
-  <section class="testimonial-section">
-    <div class="testimonial-container">
-      <p class="subheading">Testimonial</p>
-      <h2 class="heading">What our happy users say!</h2>
-
-      <div class="carousel-wrapper">
-        <div class="carousel-viewport">
-          <div class="card">
-            <div class="rating"><span class="star">⭐</span> 4.9</div>
-            <p class="message">
-              “Alaknanda Transport always delivers on time. Their punctual
-              service and helpful support team make logistics smooth and
-              stress-free for our business.”
-            </p>
-            <div class="user">
-              <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jane D" />
-              <div>
-                <p class="name">Rajesh Mehta</p>
-                <p class="role">Supply Chain Manager, FreshMart</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="rating"><span class="star">⭐</span> 4.9</div>
-            <p class="message">
-              “We’ve relied on Alaknanda for over a year. Their fleet is
-              well-maintained, and the drivers are professional and
-              courteous every step of the way.”
-            </p>
-            <div class="user">
-              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Harsh P." />
-              <div>
-                <p class="name">Priya Sharma</p>
-                <p class="role">Operations Head, QuickPack</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="rating"><span class="star">⭐</span> 4.9</div>
-            <p class="message">
-              “From daily deliveries to bulk shipments, Alaknanda handles it
-              all efficiently. Their communication and real-time tracking
-              are really helpful for planning.”
-            </p>
-            <div class="user">
-              <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Alex T." />
-              <div>
-                <p class="name">Abhishek Jain</p>
-                <p class="role">Founder, UrbanCraft Logistics</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="rating"><span class="star">⭐</span> 4.9</div>
-            <p class="message">
-              “Professional service with attention to detail. We never worry
-              about delays or damaged goods when working with Alaknanda
-              Transport.”
-            </p>
-            <div class="user">
-              <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Lisa M." />
-              <div>
-                <p class="name">Neha Agarwal</p>
-                <p class="role">Procurement Lead, BuildCo</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="rating"><span class="star">⭐</span> 4.9</div>
-            <p class="message">
-              “Excellent service! They helped us scale our delivery
-              operations while keeping everything on schedule and within
-              budget. Highly recommended!”
-            </p>
-            <div class="user">
-              <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="Rahul V." />
-              <div>
-                <p class="name">Karan Patel</p>
-                <p class="role">Logistics Manager, AgroCart</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-column">
-        <h4>About Us</h4>
-        <p>Alaknanda Transport ensures reliable <br /> transport across the country using our <br />
-          temperature-controlled fleet.</p>
-      </div>
-      <div class="footer-column">
-        <h4>Quick Links</h4>
+    <!-- Section Specialised Tankers -->
+    <section class="fleet-section">
+      <div class="fleet-content">
+        <h2>Specialised Tankers</h2>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li> Up to 7500 Gallon Capacity</li>
+          <li> GPS Tracking</li>
+          <li> Rigorous Cleaning Protocols</li>
         </ul>
       </div>
-      <div class="footer-column">
-        <h4>Poral | Address</h4>
-        <p><a href="">hffa@Fudusetece.com</a></p>
-        <p><a href="">(128)-483-7530</a></p>
-        <p>1224 Transport Lane, City State 12545</p>
+      <div class="fleet-images">
+        <div class="fleet-card">
+          <img src="images/truck3.webp" alt="Fleet Truck 1" />
+          <p>12 Tyer</p>
+        </div>
+        <div class="fleet-card">
+          <img src="images/truck4.jpg" alt="Fleet Truck 2" />
+          <p>14 Tyer</p>
+        </div>
+        <div class="fleet-card">
+          <img src="images/truck5.avif" alt="Fleet Truck 3" />
+          <p>18 Tyer</p>
+        </div>
       </div>
-      <div class="footer-column">
-        <h4>Follow Us</h4>
-        <p class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a><br>
-          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-        </p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <h3>©️ 2025 Alaknanda Transport. All Rights Reserved.</h3>
-    </div>
-  </footer>
 
-  </div>
+    </section>
+
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <div class="testimonial-container">
+        <p class="subheading">Testimonial</p>
+        <h2 class="heading">What our happy users say!</h2>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-viewport">
+            <div class="card">
+              <div class="rating"><span class="star">⭐</span> 4.9</div>
+              <p class="message">
+                “Alaknanda Transport always delivers on time. Their punctual
+                service and helpful support team make logistics smooth and
+                stress-free for our business.”
+              </p>
+              <div class="user">
+                <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jane D" />
+                <div>
+                  <p class="name">Rajesh Mehta</p>
+                  <p class="role">Supply Chain Manager, FreshMart</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="rating"><span class="star">⭐</span> 4.9</div>
+              <p class="message">
+                “We’ve relied on Alaknanda for over a year. Their fleet is
+                well-maintained, and the drivers are professional and
+                courteous every step of the way.”
+              </p>
+              <div class="user">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Harsh P." />
+                <div>
+                  <p class="name">Priya Sharma</p>
+                  <p class="role">Operations Head, QuickPack</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="rating"><span class="star">⭐</span> 4.9</div>
+              <p class="message">
+                “From daily deliveries to bulk shipments, Alaknanda handles it
+                all efficiently. Their communication and real-time tracking
+                are really helpful for planning.”
+              </p>
+              <div class="user">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Alex T." />
+                <div>
+                  <p class="name">Abhishek Jain</p>
+                  <p class="role">Founder, UrbanCraft Logistics</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="rating"><span class="star">⭐</span> 4.9</div>
+              <p class="message">
+                “Professional service with attention to detail. We never worry
+                about delays or damaged goods when working with Alaknanda
+                Transport.”
+              </p>
+              <div class="user">
+                <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Lisa M." />
+                <div>
+                  <p class="name">Neha Agarwal</p>
+                  <p class="role">Procurement Lead, BuildCo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="rating"><span class="star">⭐</span> 4.9</div>
+              <p class="message">
+                “Excellent service! They helped us scale our delivery
+                operations while keeping everything on schedule and within
+                budget. Highly recommended!”
+              </p>
+              <div class="user">
+                <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="Rahul V." />
+                <div>
+                  <p class="name">Karan Patel</p>
+                  <p class="role">Logistics Manager, AgroCart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <p>Alaknanda Transport ensures reliable <br /> transport across the country using our <br />
+            temperature-controlled fleet.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Poral | Address</h4>
+          <p><a href="">hffa@Fudusetece.com</a></p>
+          <p><a href="">(128)-483-7530</a></p>
+          <p>1224 Transport Lane, City State 12545</p>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <p class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a><br>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h3>©️ 2025 Alaknanda Transport. All Rights Reserved.</h3>
+      </div>
+    </footer>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -542,19 +450,19 @@
     }
   </script>
 
-<!-- SCROLL SCRIPT -->
-<script>
-  window.addEventListener("scroll", () => {
-    const hero = document.querySelector(".hero");
-    const mainContent = document.querySelector(".scroll-content");
+  <!-- SCROLL SCRIPT -->
+  <script>
+    window.addEventListener("scroll", () => {
+      const hero = document.querySelector(".hero");
+      const mainContent = document.querySelector(".scroll-content");
 
-    const heroBottom = hero.getBoundingClientRect().bottom;
+      const heroBottom = hero.getBoundingClientRect().bottom;
 
-    if (heroBottom <= 0) {
-      mainContent.classList.add("visible");
-    }
-  });
-</script>
+      if (heroBottom <= 0) {
+        mainContent.classList.add("visible");
+      }
+    });
+  </script>
 
 
 
